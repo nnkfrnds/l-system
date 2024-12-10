@@ -1,0 +1,8 @@
+total 24
+drwxr-xr-x 3 nico nico 4096 Dec  9 21:36 .
+drwxr-xr-x 3 nico nico 4096 Dec  9 21:03 ..
+drwxr-xr-x 8 nico nico 4096 Dec  9 20:59 .git
+-rw-r--r-- 1 nico nico  219 Dec  9 20:57 README.md
+-rw-r--r-- 1 nico nico  809 Dec  9 21:26 environment.yml
+-rw-r--r-- 1 nico nico 3355 Dec  9 20:57 ex1.py
+-rw-r--r-- 1 nico nico    0 Dec  9 21:36 meu
