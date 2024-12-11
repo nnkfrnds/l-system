@@ -1,3 +1,4 @@
+#python ex1.py --d 30 --a 120 --i 8 --l 4 --axim "FGRBO" --rules "F:F[-G][+G],G:F[-R][+R],R:F[-B][+B],B:F[-O][+O],O:F[-F][+F]"
 import turtle
 from collections import deque
 import argparse
@@ -19,7 +20,7 @@ class LSystem:
 
     def draw(self, distance, largura):
         stack = deque()
-        turtle.speed(0)
+        turtle.speed(65000)
         turtle.width(largura)
         for cmd in self.result:
             if cmd == "F":
