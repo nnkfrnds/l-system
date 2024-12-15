@@ -1,0 +1,53 @@
+states:
+
+A set of all possible states in the automata
+In our palindrome example: {'q0', 'q1', 'q2'}
+These are the different configurations the PDA can be in during computation
+Each state represents a specific point in the automata's processing
+
+
+input_alphabet:
+
+The set of symbols that can be read from the input string
+In our example: {'0', '1'}
+These are the valid characters the PDA can process
+Any symbol not in this set cannot be processed by the automata
+
+
+stack_alphabet:
+
+The set of symbols that can be pushed to or popped from the stack
+In our example: {'0', '1', 'Z'}
+Includes input symbols and special stack markers (like 'Z')
+'Z' is typically used as a bottom-of-stack marker
+
+
+transition_function:
+
+A dictionary defining how the PDA moves between states
+Maps a configuration to possible next configurations
+Structure: {(current_state, input_symbol, pop_symbol): [(next_state, push_symbols)]}
+Contains all the "rules" for how the automata can transition
+
+
+start_state:
+
+The initial state when the PDA begins processing
+In our example: 'q0'
+The first state the automata is in before reading any input
+
+
+start_stack_symbol:
+
+The initial symbol placed on the stack
+In our example: 'Z'
+Typically a special marker indicating the bottom of the stack
+Helps in managing stack operations and defining initial configuration
+
+
+accept_states:
+
+Set of states that, when reached, indicate the input is accepted
+In our example: {'q2'}
+If the PDA reaches any of these states, the input string is considered valid
+Can be multiple states depending on the specific PDA design
