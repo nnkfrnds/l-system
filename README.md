@@ -57,6 +57,41 @@ O programa utiliza a biblioteca `turtle` para desenhar a sequência gerada. Os s
 | `Y` | Altera a cor da linha para amarelo. |
 | `O` | Altera a cor da linha para laranja. |
 
+### Validação com Autômato de Pilha
+
+Esta seção descreve a implementação de um autômato de pilha para validar as cadeias geradas pelo L-System.
+
+#### Funcionamento (Validação com Autômato de Pilha)
+
+O programa implementa um autômato de pilha para verificar se uma cadeia gerada por um L-System é válida de acordo com a gramática definida. O processo consiste em:
+
+1.  **Definição do Alfabeto:** O alfabeto do L-System é definido, classificando os símbolos como variáveis ou constantes.
+2.  **Geração da Cadeia:** Uma cadeia é gerada usando as regras de produção do L-System.
+3.  **Construção das Transições:** As transições do autômato de pilha são construídas com base no alfabeto, nas regras de produção e no número de iterações do L-System. As transições consideram a manipulação da pilha (empilhar e desempilhar) e a leitura da cadeia de entrada.
+4.  **Validação:** O autômato percorre a cadeia, aplicando as transições e manipulando a pilha. A cadeia é considerada válida se o autômato atingir o estado final com a pilha vazia.
+
+#### Estruturas de Dados
+
+*   **`Transicao`:** Uma classe dataclass que representa uma transição do autômato, contendo o estado de origem, estado de destino, símbolo de leitura, símbolo a ser desempilhado e símbolos a serem empilhados.
+*   **`LSystem`:** Uma classe dataclass que representa o L-System, contendo o alfabeto, o axioma e as regras de produção.
+*   **`AutomatoPilha`:** Uma classe dataclass que representa o autômato de pilha, contendo uma instância do `LSystem`, o alfabeto da pilha, os estados do autômato e o número de iterações.
+
+#### Função `validar_cadeia`
+
+Esta função implementa a lógica de validação da cadeia usando o autômato de pilha. Ela itera pela cadeia, aplicando as transições válidas e manipulando a pilha.
+
+#### Função `construir_transicoes`
+
+Esta função constrói a lista de transições do autômato de pilha, considerando as regras de produção do L-System e o número de iterações.
+
+#### Função `gerar_alfabeto_da_pilha`
+
+Esta função gera o alfabeto da pilha com base nas variáveis do alfabeto do L-System e no número de iterações.
+
+#### Exemplo de uso
+
+
+
 ### Requisitos
 
 - Python
