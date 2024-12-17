@@ -48,7 +48,7 @@ O programa utiliza a biblioteca `turtle` para desenhar a sequência gerada. Os s
 | `F` | Move a tartaruga para frente desenhando uma linha. |
 | `f` | Move a tartaruga para frente sem desenhar. |
 | `+` | Rotaciona a tartaruga para a direita (ângulo especificado por `--a`). |
-| `-` | Rotaciona a tartaruga para a esquerda. |
+| `-` | Rotaciona a tartaruga para a esquerda (ângulo especificado por `--a`). |
 | `[` | Salva a posição atual e o ângulo da tartaruga na pilha. |
 | `]` | Restaura a última posição e ângulo salvos. |
 | `G` | Altera a cor da linha para verde. |
