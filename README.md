@@ -1,6 +1,6 @@
 # l-system
 
-## Descrição do programa 
+### Descrição do programa 
 
 Este programa é uma implementação de sistemas de Lindenmayer (L-Systems) em Python. A partir de uma sequência inicial (axioma) e regras de substituição, o sistema gera padrões gráficos iterativos que são desenhados usando a biblioteca turtle.
 
